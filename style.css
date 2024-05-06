@@ -1,0 +1,237 @@
+
+
+html, body {
+    height: 100%; /* מגדיר את הגובה ל-100% מגובה החלון */
+    padding: 0;
+    overflow: hidden; /* מאפשר גלילה רק אם נחוץ */
+   
+    background-size: cover; /* מתאים את התמונה לכיסוי מלא של המסך */
+    background-position: center; /* ממקם את התמונה במרכז */
+    display: flex;
+    align-items: center; /* מיישר אנכית למרכז */
+    justify-content: center; /* מיישר אופקית למרכז */ 
+    margin: 0; /* מסיר שוליים על מנת למנוע הזזה */
+}
+
+#page2-background {
+    background-image: url('mashkolet5.jpg'); /* הוסף את הנתיב לתמונה */
+    background-size: cover; /* מתאים את התמונה לכיסוי מלא של המסך */
+    background-position: center; /* ממקם את התמונה במרכז */
+}
+
+
+#index-background {
+    background-image: url('gymphoto2.jpg'); /* הוסף את הנתיב לתמונה */
+    background-size: cover; /* מתאים את התמונה לכיסוי מלא של המסך */
+    background-position: center; /* ממקם את התמונה במרכז */
+}
+
+
+#page3-background {
+    background-image: url('mashkolet3.avif'); /* הוסף את הנתיב לתמונה */
+    background-size: cover; /* מתאים את התמונה לכיסוי מלא של המסך */
+    background-position: center; /* ממקם את התמונה במרכז */
+}
+
+
+#page4-background {
+    background-image: url('mashkolet3.avif'); /* הוסף את הנתיב לתמונה */
+    background-size: cover; /* מתאים את התמונה לכיסוי מלא של המסך */
+    background-position: center; /* ממקם את התמונה במרכז */
+}
+
+
+#page5-background {
+    background-image: url('mashkolet3.avif'); /* הוסף את הנתיב לתמונה */
+    background-size: cover; /* מתאים את התמונה לכיסוי מלא של המסך */
+    background-position: center; /* ממקם את התמונה במרכז */
+}
+
+footer{
+    padding: 3px;
+    background-color: transparent; /* רקע שקוף */
+    text-align: center;
+    color: aqua;
+    width: 100%; /* מספק רוחב מלא ל-footer */
+    position: fixed; /* מיקום קבוע בתחתית הדף */
+    bottom: 0;
+    font-size: large;
+    font-weight: bold;
+}
+
+h1 {
+    
+    color: #fcf8f8;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: bolder;
+    text-align: center;   
+    white-space: pre-wrap;
+    position: relative;
+    top: 120px;
+    
+}
+
+h2{
+    font-size: 30px;
+    color: gold;
+    top: 3px;
+}
+
+
+
+a, a:link, a:visited, a:hover, a:active {
+    text-decoration: none !important; /* מסיר את הקו התחתון מכל הקישורים */
+    color: inherit !important; /* שומר על הירושה של צבע הטקסט */
+}
+
+
+.profile-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    position: fixed;
+    top: 100px;
+    left: 48%;
+    transform: translateX(-50%);
+   
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+}
+
+#homePage::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0.5;
+    width: 92%;
+    height: 25%; /* מכסה את כל המסך */
+    
+    background-size: cover; /* מתאים את התמונה לכיסוי מלא של המסך */
+  
+}
+
+
+
+.circle-container2 {
+    display: flex; /* הפעלת Flexbox */
+    flex-wrap: wrap; /* מאפשר גלילה של פריטים לשורה הבאה */
+    justify-content: center; /* ממרכז את כל הפריטים במיכל */
+    align-items: center; /* מיישר את הפריטים לאמצע השורה (אנכית) */
+    flex-direction: column; /* על ידי הגדרת כיוון עמודה, כל פריט חדש יופיע מתחת לקודם לו */
+    gap: 10px; /* מרווח בין העיגולים */
+    
+
+    
+}
+
+.circle-container {
+    display: flex; /* הפעלת Flexbox */
+    flex-wrap: wrap; /* מאפשר גלילה של פריטים לשורה הבאה */
+    justify-content: center; /* ממרכז את כל הפריטים במיכל */
+    align-items: center; /* מיישר את הפריטים לאמצע השורה (אנכית) */
+    flex-direction: column; /* על ידי הגדרת כיוון עמודה, כל פריט חדש יופיע מתחת לקודם לו */
+    gap: 30px; /* מרווח בין העיגולים */
+   
+    
+}
+
+.circle {
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin: 0 ; /* הוספת שוליים להפרדה בין העיגולים */
+    /*flex: 0 0 auto; /* מונע שינויים בגודל הפריט במעבר שורה */
+    cursor: pointer;
+    margin-bottom: 0;
+    position: relative; /* יצירת מיקום יחסי לאלמנטים הפנימיים */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    overflow: auto; /* מונע גלישה של הטקסט מחוץ לעיגול */
+    border-radius: 0;
+    border: 3px solid #ccc;
+}
+
+
+.circle-item {
+    text-align: center;
+    max-width: 180px; /* מגביל את רוחב הפריט לטובת עיצוב מסודר */
+}
+
+.circle-text {
+    margin-bottom: 10px; /* מוסיף שוליים מתחת לטקסט */
+    font-size: 12px; /* מגדיר גודל טקסט */
+    color: white; /* צבע הטקסט */
+    text-align: center;
+    padding: 3px;
+    font-size: x-large;
+    font-weight: 900 bolder;
+}
+
+
+.circle-description {
+    display: flex; /* הופך את האלמנט ל-flex container */
+    justify-content: center; /* ממרכז את התוכן אופקית */
+    align-items: center; /* מיישר את התוכן אנכית למרכז */
+    gap: 0.5px; /* מוסיף מרווח בין הפסקאות */
+    flex-wrap: wrap; /* מונע עיטוף של פריטים לשורה חדשה */
+   
+}
+
+.circle-description p {
+   
+    font-size: 25px; /* גודל הטקסט לפסקאות */
+    font-weight: bolder;
+    color: #ccc; /* צבע הטקסט */
+    margin: 7px;; /* מסיר שוליים סביב הפסקאות */
+    padding: 0.5px;
+    white-space: nowrap ; /* מונע שבירת שורה בתוך הפסקה */
+    color: gold;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #f0f0f0; /* צבע רקע */
+    color: #333; /* צבע טקסט */
+    text-decoration: none; /* מסיר קו תחתון */
+    border-radius: 10px; /* קצוות מעוגלים */
+    font-weight: bold; /* גופן מודגש */
+    position: absolute; /* מיקום מוחלט ביחס לאלמנט האב הקרוב ביותר עם position relative או ל-body */
+    top: 20px; /* מרווח מהחלק העליון של המסך */
+    left: 15px; /* מרווח מהחלק השמאלי של המסך */
+}
+
+.back-button:hover {
+    background-color: #e0e0e0; /* צבע רקע בעת העברת העכבר */
+}
+
+
+
+
+@media (max-width: 768px) {
+    .categories {
+        grid-template-columns: repeat(2, 1fr); /* Continue with two columns */
+        max-width: 100%; /* Use maximum width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .categories {
+        grid-template-columns: repeat(2, 1fr); /* Still maintain two columns on very small devices */
+    }
+}

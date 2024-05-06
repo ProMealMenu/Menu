@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Background</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="page4-background">
+    
+    <a href="page2.html" class="back-button">🔙</a>
+    <div class="circle-container">
+        <div class="circle-item">
+            <h2>מנות בסיסיות</h2>
+            <div class="circle-text">סטיק פילה</div>
+            <div class="circle" style="background-image: url('steakbeeflunch.jpg');" ></div>
+            <div class="circle-description">
+                <p> ₪60 : מחיר </p>
+                
+
+            </div>
+        </div>
+        <div class="circle-item">
+            <div class="circle-text">שווארמה עגל</div>
+            <div class="circle" style="background-image: url('shawrmabeef.jpg');" ></div>
+            <div class="circle-description">
+                <br/><p> ₪45 : מחיר </p><br/>
+                
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>לשים לב : המחיר משתנה לפי הכמות</p>
+    </footer>
+    <script>
+        function changeBackground(image) {
+            document.body.style.backgroundImage = `url('path/to/your/${image}')`;
+        }
+    </script>
+</body>
+</html>

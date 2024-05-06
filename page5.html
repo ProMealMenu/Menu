@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Background</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="page5-background">
+    <a href="page2.html" class="back-button">🔙</a>
+    <div class="circle-container">
+        <div class="circle-item">
+            <h2>מנות בסיסיות</h2>
+            <div class="circle-text">פילה סלמון</div>
+            <div class="circle" style="background-image: url('salomonfish.jpg');" ></div>
+            <div class="circle-description">
+                <p> ₪40 : מחיר </p>
+               
+            </div>
+        </div>
+       
+    </div>
+    <footer>
+        <p>לשים לב : המחיר משתנה לפי הכמות</p>
+    </footer>
+    <script>
+        function changeBackground(image) {
+            document.body.style.backgroundImage = `url('path/to/your/${image}')`;
+        }
+    </script>
+</body>
+</html>
